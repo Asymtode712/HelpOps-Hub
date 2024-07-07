@@ -232,7 +232,7 @@ animation: outline-keys var(--animation);
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   .login-auth-container,
   .signup-auth-container {
     width: 350px !important;
@@ -249,18 +249,8 @@ animation: outline-keys var(--animation);
 
   .login-auth-container p,
   .signup-auth-container p {
-    font-size: 12px;
-    text-wrap: nowrap;
+    font-size: 14px;
   }
-
-  .login-auth-container .lower {
-    margin-left: 35px;
-  }
-
-  .login-auth-container .lower p:nth-child(2){
-    margin-left: 25px;
-  }
-
 
   .login-auth-container input,
   .signup-auth-container input {
@@ -269,7 +259,7 @@ animation: outline-keys var(--animation);
   }
 
   .login-auth-container button,
-  .signup-auth-container .continue-btn {
+  .signup-auth-container button {
     width: 80%;
     margin-left: 10%;
   }
@@ -326,13 +316,17 @@ animation: outline-keys var(--animation);
   }
 
   .login-auth-container button,
-  .signup-auth-container .continue-btn {
+  .signup-auth-container button {
     font-size: 14px;
   }
 
+  .login-auth-container .close-btn{
+    right: -120px !important;
+  }
   .login-auth-container .close-btn,
   .signup-auth-container .close-btn {
     position: absolute;
+    top: -10px;
     right: -120px !important;
   }
   .login-auth-container a,
